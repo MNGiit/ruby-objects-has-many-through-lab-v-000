@@ -19,4 +19,10 @@ class Genre
   def new_song(name, artist)
     song = Song.new(name, artist, self)
   end
+  
+  def artists
+    Artist.all.select |artist|
+      artist.genres.include?(self)
+    end
+  end  
 end
