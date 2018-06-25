@@ -17,6 +17,9 @@ class Patient
     end
   end
   
+  def doctors
+    appointments.s
+  
   def self.all
     @@all
   end
