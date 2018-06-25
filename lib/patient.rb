@@ -11,6 +11,10 @@ class Patient
     Appointment.new(self, doctor, date)
   end
   
+  def doctors
+    Appointment.all.select do |appointment|
+      appointment.
+  
   def self.all
     @@all
   end
