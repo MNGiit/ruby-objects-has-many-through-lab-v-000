@@ -21,4 +21,12 @@ class Doctor
   def self.all
     @@all
   end
+  
+  def genres
+    songs.collect do |song|
+      song.genre
+    end
+  end
+  
+  
 end
