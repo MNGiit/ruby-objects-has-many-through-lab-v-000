@@ -22,11 +22,9 @@ class Doctor
     @@all
   end
   
-  def genres
-    songs.collect do |song|
-      song.genre
+  def patients
+    appointments.collect do |appointment|
+      appointment.patient
     end
   end
-  
-  
 end
