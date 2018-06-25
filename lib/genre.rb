@@ -22,7 +22,7 @@ class Genre
   
   def artists
     Artist.all.select |artist|
-      artist.genres.include?(self)
+      artist.genres.include?(self.name)
     end
   end  
 end
