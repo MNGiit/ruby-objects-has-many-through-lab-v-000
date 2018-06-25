@@ -13,7 +13,9 @@ class Patient
   
   def doctors
     Appointment.all.select do |appointment|
-      appointment.
+      appointment.doctor
+    end
+  end
   
   def self.all
     @@all
